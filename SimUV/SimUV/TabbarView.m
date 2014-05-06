@@ -7,6 +7,7 @@
 //
 
 #import "TabbarView.h"
+#import "TabbarButton.h"
 
 @implementation TabbarView
 
@@ -15,7 +16,19 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor cyanColor];
+        self.backgroundColor = [UIColor grayColor];
+        NSArray* imgArray = @[@"uv_tab_home",
+                              @"uv_tab_explore",
+                              @"uv_tab_create",
+                              @"uv_tab_notifications",
+                              @"uv_tab_profile"];
+        
+        for (int i = 0; i < 5; i++)
+        {
+            TabbarButton* btn  = [[TabbarButton alloc] initWithFrame:CGRectMake(i*TABBAR_H, 0, TABBAR_H, TABBAR_H)];
+            [btn setImage:[UIImage imageNamed:[imgArray objectAtIndex:i]] forState:UIControlStateNormal];
+            [self addSubview:btn];
+        }
     }
     return self;
 }

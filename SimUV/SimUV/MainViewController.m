@@ -19,8 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        int distance = ISIOS7 ? 0 : 20;
-        tabbar = [[TabbarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-65-distance, self.view.frame.size.width, 65)];
+        tabbar = [[TabbarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-TABBAR_H, self.view.frame.size.width, TABBAR_H)];
         [self.view addSubview:tabbar];
     }
     return self;

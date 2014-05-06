@@ -15,7 +15,7 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define ISIOS7          (floorf([[[UIDevice currentDevice] systemVersion] floatValue]) >= 7)
+#define TABBAR_H  64
 
 #ifdef DEBUG
 #ifndef DLog
