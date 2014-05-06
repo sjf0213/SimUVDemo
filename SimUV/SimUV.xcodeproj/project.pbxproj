@@ -14,6 +14,7 @@
 		F09581F7191617C0009E2742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F09581F6191617C0009E2742 /* main.m */; };
 		F09581FB191617C0009E2742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F09581FA191617C0009E2742 /* AppDelegate.m */; };
 		F09581FD191617C0009E2742 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09581FC191617C0009E2742 /* Images.xcassets */; };
+		F09582EB1918B843009E2742 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09582EA1918B843009E2742 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		F09581F9191617C0009E2742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F09581FA191617C0009E2742 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F09581FC191617C0009E2742 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F09582E91918B843009E2742 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F09582EA1918B843009E2742 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +78,11 @@
 		F09581F0191617C0009E2742 /* SimUV */ = {
 			isa = PBXGroup;
 			children = (
+				F09581FC191617C0009E2742 /* Images.xcassets */,
 				F09581F9191617C0009E2742 /* AppDelegate.h */,
 				F09581FA191617C0009E2742 /* AppDelegate.m */,
-				F09581FC191617C0009E2742 /* Images.xcassets */,
+				F09582E91918B843009E2742 /* MainViewController.h */,
+				F09582EA1918B843009E2742 /* MainViewController.m */,
 			);
 			path = SimUV;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09581FB191617C0009E2742 /* AppDelegate.m in Sources */,
+				F09582EB1918B843009E2742 /* MainViewController.m in Sources */,
 				F09581F7191617C0009E2742 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
