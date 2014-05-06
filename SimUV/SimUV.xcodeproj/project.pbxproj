@@ -15,6 +15,7 @@
 		F09581FB191617C0009E2742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F09581FA191617C0009E2742 /* AppDelegate.m */; };
 		F09581FD191617C0009E2742 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09581FC191617C0009E2742 /* Images.xcassets */; };
 		F09582EB1918B843009E2742 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09582EA1918B843009E2742 /* MainViewController.m */; };
+		F095830C1918BCDF009E2742 /* TabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F095830B1918BCDF009E2742 /* TabbarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		F09581FC191617C0009E2742 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F09582E91918B843009E2742 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F09582EA1918B843009E2742 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F095830A1918BCDF009E2742 /* TabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarView.h; sourceTree = "<group>"; };
+		F095830B1918BCDF009E2742 /* TabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				F09581FA191617C0009E2742 /* AppDelegate.m */,
 				F09582E91918B843009E2742 /* MainViewController.h */,
 				F09582EA1918B843009E2742 /* MainViewController.m */,
+				F095830A1918BCDF009E2742 /* TabbarView.h */,
+				F095830B1918BCDF009E2742 /* TabbarView.m */,
 			);
 			path = SimUV;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				F09581FB191617C0009E2742 /* AppDelegate.m in Sources */,
 				F09582EB1918B843009E2742 /* MainViewController.m in Sources */,
+				F095830C1918BCDF009E2742 /* TabbarView.m in Sources */,
 				F09581F7191617C0009E2742 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

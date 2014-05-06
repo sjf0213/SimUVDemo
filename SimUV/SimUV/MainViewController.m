@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import "TabbarView.h"
 @interface MainViewController ()
 
 @end
@@ -19,6 +19,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        int distance = ISIOS7 ? 0 : 20;
+        tabbar = [[TabbarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-65-distance, self.view.frame.size.width, 65)];
+        [self.view addSubview:tabbar];
     }
     return self;
 }

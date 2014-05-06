@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  TabbarView.h
 //  SimUV
 //
 //  Created by song jufeng on 14-5-6.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TabbarView;
-@interface MainViewController : UIViewController
-{
-    TabbarView* tabbar;
-}
+
+@interface TabbarView : UIView
+
 @end
