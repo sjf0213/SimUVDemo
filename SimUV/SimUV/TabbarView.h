@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TabbarView : UIView
-
+@property(nonatomic,weak)id parentResponder;
 @end

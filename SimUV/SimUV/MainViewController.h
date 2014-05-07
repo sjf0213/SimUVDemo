@@ -12,4 +12,5 @@
 {
     TabbarView* tabbar;
 }
+-(void)onTabBarButtonClick:(UIButton *)sender;
 @end

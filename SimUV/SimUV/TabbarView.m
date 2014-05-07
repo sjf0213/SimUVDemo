@@ -8,7 +8,9 @@
 
 #import "TabbarView.h"
 #import "TabbarButton.h"
-
+//@interface TabbarView()
+//-(void)onTabbarButtonClick:(id)sender;
+//@end
 @implementation TabbarView
 
 - (id)initWithFrame:(CGRect)frame
@@ -27,19 +29,41 @@
         {
             TabbarButton* btn  = [[TabbarButton alloc] initWithFrame:CGRectMake(i*TABBAR_H, 0, TABBAR_H, TABBAR_H)];
             [btn setImage:[UIImage imageNamed:[imgArray objectAtIndex:i]] forState:UIControlStateNormal];
+            btn.tag = i;
+            [btn addTarget:self action:@selector(onTabbarButtonClick:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:btn];
         }
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+-(void)onTabbarButtonClick:(id)sender
 {
-    // Drawing code
+    if (![sender isKindOfClass:[UIButton class]])
+    {
+        return;
+    }
+    UIButton* btn = (UIButton*)sender;
+    for (UIButton* item in self.subviews)
+    {
+        if ([item isKindOfClass:[TabbarButton class]])
+        {
+            if (btn.tag == item.tag){
+                [item setSelected:YES];
+            }else{
+                [item setSelected:NO];
+            }
+        }
+    }
+    
+//    if (btn.tag != 1002 && [btn isKindOfClass:[TabbarButton class]])
+//    {
+//        ((PhoneMainTabBarButton*)btn).isSelect = YES;
+//    }
+    
+    if ([self.parentResponder respondsToSelector:@selector(onTabBarButtonClick:)]) {
+        [self.parentResponder performSelector:@selector(onTabBarButtonClick:) withObject:btn];
+    }
 }
-*/
 
 @end

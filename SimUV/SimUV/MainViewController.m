@@ -20,6 +20,7 @@
     if (self) {
         // Custom initialization
         tabbar = [[TabbarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-TABBAR_H, self.view.frame.size.width, TABBAR_H)];
+        tabbar.parentResponder = self;
         [self.view addSubview:tabbar];
     }
     return self;
@@ -47,5 +48,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)onTabBarButtonClick:(UIButton *)sender
+{
+    //int index = (int)sender.tag - 1000;
+    //[self SelectIndex:index];
+}
 
 @end

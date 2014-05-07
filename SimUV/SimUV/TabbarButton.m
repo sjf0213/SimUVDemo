@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
     }
     return self;
 }
@@ -28,5 +28,12 @@
     // Drawing code
 }
 */
-
+-(void)setSelected:(BOOL)selected
+{
+    if (selected){
+        self.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.5];
+    }else{
+        self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    }
+}
 @end
