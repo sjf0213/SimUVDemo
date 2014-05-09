@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "TabbarView.h"
+#import "HomeViewController.h"
 @interface MainViewController ()
 
 @end
@@ -51,8 +52,17 @@
 
 -(void)onTabBarButtonClick:(UIButton *)sender
 {
-    //int index = (int)sender.tag - 1000;
-    //[self SelectIndex:index];
+    int index = (int)sender.tag;
+    switch (index)
+    {
+        case 0:
+            if (!homeController) {
+                homeController = [[HomeViewController alloc] init];
+                [self.view addSubview:homeController.view];
+            }
+            [self.view bringSubviewToFront:homeController.view];
+            break;
+    }
 }
 
 @end

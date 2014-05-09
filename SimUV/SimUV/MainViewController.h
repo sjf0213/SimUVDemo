@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @class TabbarView;
+@class HomeViewController;
 @interface MainViewController : UIViewController
 {
     TabbarView* tabbar;
+    HomeViewController* homeController;
 }
 -(void)onTabBarButtonClick:(UIButton *)sender;
 @end
