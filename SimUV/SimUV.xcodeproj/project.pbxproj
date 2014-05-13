@@ -11,6 +11,9 @@
 		F027BC8E1920CA5500254FD4 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC8D1920CA5500254FD4 /* PlusViewController.m */; };
 		F027BC911920CF2000254FD4 /* PlusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC901920CF2000254FD4 /* PlusView.m */; };
 		F027BC941921B0BC00254FD4 /* PlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC931921B0BC00254FD4 /* PlusButton.m */; };
+		F027BC991922151700254FD4 /* uv_createnav_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC961922151700254FD4 /* uv_createnav_camera@2x.png */; };
+		F027BC9A1922151700254FD4 /* uv_createnav_drafts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC971922151700254FD4 /* uv_createnav_drafts@2x.png */; };
+		F027BC9B1922151700254FD4 /* uv_createnav_import@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC981922151700254FD4 /* uv_createnav_import@2x.png */; };
 		F09581EB191617C0009E2742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EA191617C0009E2742 /* Foundation.framework */; };
 		F09581ED191617C0009E2742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EC191617C0009E2742 /* CoreGraphics.framework */; };
 		F09581EF191617C0009E2742 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EE191617C0009E2742 /* UIKit.framework */; };
@@ -37,6 +40,9 @@
 		F027BC901920CF2000254FD4 /* PlusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusView.m; sourceTree = "<group>"; };
 		F027BC921921B0BC00254FD4 /* PlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusButton.h; sourceTree = "<group>"; };
 		F027BC931921B0BC00254FD4 /* PlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusButton.m; sourceTree = "<group>"; };
+		F027BC961922151700254FD4 /* uv_createnav_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_createnav_camera@2x.png"; sourceTree = "<group>"; };
+		F027BC971922151700254FD4 /* uv_createnav_drafts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_createnav_drafts@2x.png"; sourceTree = "<group>"; };
+		F027BC981922151700254FD4 /* uv_createnav_import@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_createnav_import@2x.png"; sourceTree = "<group>"; };
 		F09581E7191617C0009E2742 /* SimUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09581EA191617C0009E2742 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F09581EC191617C0009E2742 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,6 +90,16 @@
 				F0EFA1011918DED800E96E96 /* TabbarButton.m */,
 			);
 			name = Tab;
+			sourceTree = "<group>";
+		};
+		F027BC951922151700254FD4 /* plus */ = {
+			isa = PBXGroup;
+			children = (
+				F027BC961922151700254FD4 /* uv_createnav_camera@2x.png */,
+				F027BC971922151700254FD4 /* uv_createnav_drafts@2x.png */,
+				F027BC981922151700254FD4 /* uv_createnav_import@2x.png */,
+			);
+			path = plus;
 			sourceTree = "<group>";
 		};
 		F09581DE191617C0009E2742 = {
@@ -151,6 +167,7 @@
 		F095830D1918D291009E2742 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F027BC951922151700254FD4 /* plus */,
 				F095831F1918D291009E2742 /* tabbar */,
 			);
 			name = resources;
@@ -222,10 +239,13 @@
 			files = (
 				F09581F5191617C0009E2742 /* InfoPlist.strings in Resources */,
 				F09583381918D291009E2742 /* uv_tab_profile@2x.png in Resources */,
+				F027BC991922151700254FD4 /* uv_createnav_camera@2x.png in Resources */,
 				F09583361918D291009E2742 /* uv_tab_home@2x.png in Resources */,
 				F09583371918D291009E2742 /* uv_tab_notifications@2x.png in Resources */,
+				F027BC9A1922151700254FD4 /* uv_createnav_drafts@2x.png in Resources */,
 				F09583581918D5A6009E2742 /* Images.xcassets in Resources */,
 				F09583351918D291009E2742 /* uv_tab_explore@2x.png in Resources */,
+				F027BC9B1922151700254FD4 /* uv_createnav_import@2x.png in Resources */,
 				F09583341918D291009E2742 /* uv_tab_create@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

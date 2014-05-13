@@ -98,8 +98,6 @@
 
 -(void)onTapPlusClose
 {
-    DLog(@"------------close plus------------");
-
     typeof(self) __weak wself = self;
     [self.plusBtn setSelected:NO];
     [UIView animateWithDuration:0.3 animations:^{
