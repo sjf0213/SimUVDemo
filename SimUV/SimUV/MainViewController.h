@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 @class TabbarView;
 @class HomeViewController;
+//@class PlusViewController;
 @interface MainViewController : UIViewController
 {
     TabbarView* tabbar;
     HomeViewController* homeController;
+    //PlusViewController* plusController;
 }
 -(void)onTabBarButtonClick:(UIButton *)sender;
 @end

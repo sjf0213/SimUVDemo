@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F027BC47191CA71600254FD4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC46191CA71600254FD4 /* HomeViewController.m */; };
+		F027BC8E1920CA5500254FD4 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC8D1920CA5500254FD4 /* PlusViewController.m */; };
+		F027BC911920CF2000254FD4 /* PlusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC901920CF2000254FD4 /* PlusView.m */; };
+		F027BC941921B0BC00254FD4 /* PlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F027BC931921B0BC00254FD4 /* PlusButton.m */; };
 		F09581EB191617C0009E2742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EA191617C0009E2742 /* Foundation.framework */; };
 		F09581ED191617C0009E2742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EC191617C0009E2742 /* CoreGraphics.framework */; };
 		F09581EF191617C0009E2742 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EE191617C0009E2742 /* UIKit.framework */; };
@@ -28,6 +31,12 @@
 /* Begin PBXFileReference section */
 		F027BC45191CA71600254FD4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F027BC46191CA71600254FD4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F027BC8C1920CA5500254FD4 /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusViewController.h; sourceTree = "<group>"; };
+		F027BC8D1920CA5500254FD4 /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusViewController.m; sourceTree = "<group>"; };
+		F027BC8F1920CF2000254FD4 /* PlusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusView.h; sourceTree = "<group>"; };
+		F027BC901920CF2000254FD4 /* PlusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusView.m; sourceTree = "<group>"; };
+		F027BC921921B0BC00254FD4 /* PlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusButton.h; sourceTree = "<group>"; };
+		F027BC931921B0BC00254FD4 /* PlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusButton.m; sourceTree = "<group>"; };
 		F09581E7191617C0009E2742 /* SimUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09581EA191617C0009E2742 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F09581EC191617C0009E2742 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,17 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F027BC48191CA72200254FD4 /* Main */ = {
+		F027BC48191CA72200254FD4 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
-				F09582E91918B843009E2742 /* MainViewController.h */,
-				F09582EA1918B843009E2742 /* MainViewController.m */,
 				F095830A1918BCDF009E2742 /* TabbarView.h */,
 				F095830B1918BCDF009E2742 /* TabbarView.m */,
 				F0EFA1001918DED800E96E96 /* TabbarButton.h */,
 				F0EFA1011918DED800E96E96 /* TabbarButton.m */,
 			);
-			name = Main;
+			name = Tab;
 			sourceTree = "<group>";
 		};
 		F09581DE191617C0009E2742 = {
@@ -113,9 +120,17 @@
 			children = (
 				F09581F9191617C0009E2742 /* AppDelegate.h */,
 				F09581FA191617C0009E2742 /* AppDelegate.m */,
-				F027BC48191CA72200254FD4 /* Main */,
+				F027BC48191CA72200254FD4 /* Tab */,
+				F09582E91918B843009E2742 /* MainViewController.h */,
+				F09582EA1918B843009E2742 /* MainViewController.m */,
 				F027BC45191CA71600254FD4 /* HomeViewController.h */,
 				F027BC46191CA71600254FD4 /* HomeViewController.m */,
+				F027BC8C1920CA5500254FD4 /* PlusViewController.h */,
+				F027BC8D1920CA5500254FD4 /* PlusViewController.m */,
+				F027BC8F1920CF2000254FD4 /* PlusView.h */,
+				F027BC901920CF2000254FD4 /* PlusView.m */,
+				F027BC921921B0BC00254FD4 /* PlusButton.h */,
+				F027BC931921B0BC00254FD4 /* PlusButton.m */,
 			);
 			path = SimUV;
 			sourceTree = "<group>";
@@ -223,8 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09581FB191617C0009E2742 /* AppDelegate.m in Sources */,
+				F027BC8E1920CA5500254FD4 /* PlusViewController.m in Sources */,
+				F027BC941921B0BC00254FD4 /* PlusButton.m in Sources */,
 				F09582EB1918B843009E2742 /* MainViewController.m in Sources */,
 				F095830C1918BCDF009E2742 /* TabbarView.m in Sources */,
+				F027BC911920CF2000254FD4 /* PlusView.m in Sources */,
 				F09581F7191617C0009E2742 /* main.m in Sources */,
 				F0EFA1021918DED800E96E96 /* TabbarButton.m in Sources */,
 				F027BC47191CA71600254FD4 /* HomeViewController.m in Sources */,
