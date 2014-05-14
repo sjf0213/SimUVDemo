@@ -28,6 +28,8 @@
         tabbar = [[TabbarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-TABBAR_H, self.view.frame.size.width, TABBAR_H)];
         tabbar.parentResponder = self;
         [self.view addSubview:tabbar];
+        
+        [tabbar setTabbarIndex:0];
     }
     return self;
 }
@@ -55,9 +57,9 @@
 }
 */
 
--(void)onTabBarButtonClick:(UIButton *)sender
+-(void)selectControllerIndex:(NSNumber*)number
 {
-    int index = (int)sender.tag;
+    NSInteger index = [number integerValue];
     switch (index)
     {
         case 0:
@@ -68,6 +70,7 @@
                 [self.view addSubview:homeController.view];
             }
             [self.view bringSubviewToFront:homeController.view];
+            [self.view bringSubviewToFront:tabbar];
         }
         break;
         case 2:

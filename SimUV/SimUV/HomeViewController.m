@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 
 @interface HomeViewController ()
-
+@property(nonatomic, strong)UITableView* mainTable;
 @end
 
 @implementation HomeViewController
@@ -32,7 +32,7 @@
     {
 //        CGRect viewFrame = [[UIScreen mainScreen] bounds];
 //        self
-        self.view.backgroundColor = [UIColor orangeColor];
+        self.view.backgroundColor = [UIColor colorWithRed:28/255.0 green:28/255.0 blue:31/255.0 alpha:1.0];
     }
     return self;
 }

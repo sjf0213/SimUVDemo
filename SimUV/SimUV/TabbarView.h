@@ -10,4 +10,6 @@
 
 @interface TabbarView : UIView
 @property(nonatomic,weak)id parentResponder;
+
+-(void)setTabbarIndex:(NSInteger)index;
 @end

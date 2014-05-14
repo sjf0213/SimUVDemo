@@ -16,5 +16,5 @@
     HomeViewController* homeController;
     //PlusViewController* plusController;
 }
--(void)onTabBarButtonClick:(UIButton *)sender;
+-(void)selectControllerIndex:(NSNumber*)number;
 @end

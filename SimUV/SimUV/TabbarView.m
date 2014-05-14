@@ -37,6 +37,8 @@
     return self;
 }
 
+
+
 -(void)onTabbarButtonClick:(id)sender
 {
     if (![sender isKindOfClass:[UIButton class]])
@@ -44,25 +46,24 @@
         return;
     }
     UIButton* btn = (UIButton*)sender;
+    [self setTabbarIndex:btn.tag];
+}
+
+-(void)setTabbarIndex:(NSInteger)index
+{
     for (UIButton* item in self.subviews)
     {
         if ([item isKindOfClass:[TabbarButton class]])
         {
-            if (btn.tag == item.tag){
+            if (index == item.tag){
                 [item setSelected:YES];
             }else{
                 [item setSelected:NO];
             }
         }
     }
-    
-//    if (btn.tag != 1002 && [btn isKindOfClass:[TabbarButton class]])
-//    {
-//        ((PhoneMainTabBarButton*)btn).isSelect = YES;
-//    }
-    
-    if ([self.parentResponder respondsToSelector:@selector(onTabBarButtonClick:)]) {
-        [self.parentResponder performSelector:@selector(onTabBarButtonClick:) withObject:btn];
+    if ([self.parentResponder respondsToSelector:@selector(selectControllerIndex:)]) {
+        [self.parentResponder performSelector:@selector(selectControllerIndex:) withObject:[NSNumber numberWithInteger:index]];
     }
 }
 

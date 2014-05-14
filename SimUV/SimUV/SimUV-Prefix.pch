@@ -16,6 +16,7 @@
 #endif
 
 #define TABBAR_H  64
+#define TOPBAR_H  64
 
 #ifdef DEBUG
 #ifndef DLog
