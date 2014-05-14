@@ -21,18 +21,25 @@
     
     // loading动画
     UIView* baseview = self.window.rootViewController.view;
+    UIView* logoBg = [[UIView alloc] initWithFrame:baseview.bounds];
+    logoBg.backgroundColor = TOPBAR_COLOR;
+    [baseview addSubview:logoBg];
+    
     UIImageView* logoImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"uv_glyph_feed_logo_minimal"]];
-    //logoImg.frame = CGRectMake(0, 0, 144, 72);
     logoImg.center = CGPointMake(baseview.center.x, baseview.center.y-16);
     logoImg.layer.transform = CATransform3DMakeScale(288/128.0, 288/128.0, 1.0);
     [baseview addSubview:logoImg];
-    [baseview bringSubviewToFront:logoImg];
+    //[baseview bringSubviewToFront:logoImg];
+    
+    
+    
     [UIView animateWithDuration:0.3 animations:^{
-        //logoImg.frame = CGRectMake(0.5*(baseview.frame.size.width-64), 16, 64, 32);
-        logoImg.center = CGPointMake(baseview.center.x, 32);
-        logoImg.layer.transform = CATransform3DIdentity;
+            logoBg.frame = CGRectMake(0, 0, baseview.frame.size.width, 64);
+            logoImg.center = CGPointMake(baseview.center.x, 32);
+            logoImg.layer.transform = CATransform3DIdentity;
         }completion:^(BOOL finished){
-        
+            [logoImg removeFromSuperview];
+            [logoBg removeFromSuperview];
         
     }];
     [self.window makeKeyAndVisible];

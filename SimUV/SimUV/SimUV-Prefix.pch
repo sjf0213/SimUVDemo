@@ -18,6 +18,8 @@
 #define TABBAR_H  64
 #define TOPBAR_H  64
 
+#define TOPBAR_COLOR [UIColor colorWithRed:28/255.0 green:28/255.0 blue:31/255.0 alpha:1.0]
+
 #ifdef DEBUG
 #ifndef DLog
 #   define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
