@@ -18,6 +18,23 @@
     _rootcontroller = [[MainViewController alloc] init];
     //_rootcontroller.view.backgroundColor = [UIColor yellowColor];
     [self.window setRootViewController:_rootcontroller];
+    
+    // loading动画
+    UIView* baseview = self.window.rootViewController.view;
+    UIImageView* logoImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"uv_glyph_feed_logo_minimal"]];
+    //logoImg.frame = CGRectMake(0, 0, 144, 72);
+    logoImg.center = CGPointMake(baseview.center.x, baseview.center.y-16);
+    logoImg.layer.transform = CATransform3DMakeScale(288/128.0, 288/128.0, 1.0);
+    [baseview addSubview:logoImg];
+    [baseview bringSubviewToFront:logoImg];
+    [UIView animateWithDuration:0.3 animations:^{
+        //logoImg.frame = CGRectMake(0.5*(baseview.frame.size.width-64), 16, 64, 32);
+        logoImg.center = CGPointMake(baseview.center.x, 32);
+        logoImg.layer.transform = CATransform3DIdentity;
+        }completion:^(BOOL finished){
+        
+        
+    }];
     [self.window makeKeyAndVisible];
     return YES;
 }

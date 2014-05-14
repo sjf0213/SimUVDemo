@@ -14,6 +14,9 @@
 		F027BC991922151700254FD4 /* uv_createnav_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC961922151700254FD4 /* uv_createnav_camera@2x.png */; };
 		F027BC9A1922151700254FD4 /* uv_createnav_drafts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC971922151700254FD4 /* uv_createnav_drafts@2x.png */; };
 		F027BC9B1922151700254FD4 /* uv_createnav_import@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC981922151700254FD4 /* uv_createnav_import@2x.png */; };
+		F027BCA01923205600254FD4 /* uv_glyph_feed_logo_minimal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC9D1923205600254FD4 /* uv_glyph_feed_logo_minimal@2x.png */; };
+		F027BCA11923205600254FD4 /* uv_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC9E1923205600254FD4 /* uv_logo@2x.png */; };
+		F027BCA21923205600254FD4 /* uv_menu_feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027BC9F1923205600254FD4 /* uv_menu_feed@2x.png */; };
 		F09581EB191617C0009E2742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EA191617C0009E2742 /* Foundation.framework */; };
 		F09581ED191617C0009E2742 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EC191617C0009E2742 /* CoreGraphics.framework */; };
 		F09581EF191617C0009E2742 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09581EE191617C0009E2742 /* UIKit.framework */; };
@@ -43,6 +46,9 @@
 		F027BC961922151700254FD4 /* uv_createnav_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_createnav_camera@2x.png"; sourceTree = "<group>"; };
 		F027BC971922151700254FD4 /* uv_createnav_drafts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_createnav_drafts@2x.png"; sourceTree = "<group>"; };
 		F027BC981922151700254FD4 /* uv_createnav_import@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_createnav_import@2x.png"; sourceTree = "<group>"; };
+		F027BC9D1923205600254FD4 /* uv_glyph_feed_logo_minimal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_glyph_feed_logo_minimal@2x.png"; sourceTree = "<group>"; };
+		F027BC9E1923205600254FD4 /* uv_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_logo@2x.png"; sourceTree = "<group>"; };
+		F027BC9F1923205600254FD4 /* uv_menu_feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv_menu_feed@2x.png"; sourceTree = "<group>"; };
 		F09581E7191617C0009E2742 /* SimUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09581EA191617C0009E2742 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F09581EC191617C0009E2742 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +106,16 @@
 				F027BC981922151700254FD4 /* uv_createnav_import@2x.png */,
 			);
 			path = plus;
+			sourceTree = "<group>";
+		};
+		F027BC9C1923205600254FD4 /* logo */ = {
+			isa = PBXGroup;
+			children = (
+				F027BC9D1923205600254FD4 /* uv_glyph_feed_logo_minimal@2x.png */,
+				F027BC9E1923205600254FD4 /* uv_logo@2x.png */,
+				F027BC9F1923205600254FD4 /* uv_menu_feed@2x.png */,
+			);
+			path = logo;
 			sourceTree = "<group>";
 		};
 		F09581DE191617C0009E2742 = {
@@ -167,6 +183,7 @@
 		F095830D1918D291009E2742 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F027BC9C1923205600254FD4 /* logo */,
 				F027BC951922151700254FD4 /* plus */,
 				F095831F1918D291009E2742 /* tabbar */,
 			);
@@ -244,8 +261,11 @@
 				F09583371918D291009E2742 /* uv_tab_notifications@2x.png in Resources */,
 				F027BC9A1922151700254FD4 /* uv_createnav_drafts@2x.png in Resources */,
 				F09583581918D5A6009E2742 /* Images.xcassets in Resources */,
+				F027BCA21923205600254FD4 /* uv_menu_feed@2x.png in Resources */,
 				F09583351918D291009E2742 /* uv_tab_explore@2x.png in Resources */,
+				F027BCA01923205600254FD4 /* uv_glyph_feed_logo_minimal@2x.png in Resources */,
 				F027BC9B1922151700254FD4 /* uv_createnav_import@2x.png in Resources */,
+				F027BCA11923205600254FD4 /* uv_logo@2x.png in Resources */,
 				F09583341918D291009E2742 /* uv_tab_create@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +384,7 @@
 				INFOPLIST_FILE = "SimUV/SimUV-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A7808F28-85D9-48E5-91E5-BE42CAC4557C";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -380,6 +401,7 @@
 				INFOPLIST_FILE = "SimUV/SimUV-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A7808F28-85D9-48E5-91E5-BE42CAC4557C";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
