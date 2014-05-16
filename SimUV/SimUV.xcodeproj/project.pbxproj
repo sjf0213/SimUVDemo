@@ -34,6 +34,8 @@
 		F0EFA1021918DED800E96E96 /* TabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EFA1011918DED800E96E96 /* TabbarButton.m */; };
 		F0F9ED9B1925AF6D00020C8F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F9ED9A1925AF6D00020C8F /* Post.m */; };
 		F0F9ED9E1925AFC800020C8F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F9ED9D1925AFC800020C8F /* User.m */; };
+		F0F9EDA11925B5D500020C8F /* AFUVApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F9EDA01925B5D500020C8F /* AFUVApiClient.m */; };
+		F0F9EDA21925B78200020C8F /* libCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F9ED5C1925A99100020C8F /* libCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		F0F9ED9A1925AF6D00020C8F /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Services/Post.m; sourceTree = "<group>"; };
 		F0F9ED9C1925AFC800020C8F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Services/User.h; sourceTree = "<group>"; };
 		F0F9ED9D1925AFC800020C8F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Services/User.m; sourceTree = "<group>"; };
+		F0F9ED9F1925B5D500020C8F /* AFUVApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFUVApiClient.h; path = Services/AFUVApiClient.h; sourceTree = "<group>"; };
+		F0F9EDA01925B5D500020C8F /* AFUVApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFUVApiClient.m; path = Services/AFUVApiClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F9EDA21925B78200020C8F /* libCore.a in Frameworks */,
 				F09581ED191617C0009E2742 /* CoreGraphics.framework in Frameworks */,
 				F09581EF191617C0009E2742 /* UIKit.framework in Frameworks */,
 				F09581EB191617C0009E2742 /* Foundation.framework in Frameworks */,
@@ -242,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				F0F9ED981925AF1600020C8F /* Modals */,
+				F0F9ED9F1925B5D500020C8F /* AFUVApiClient.h */,
+				F0F9EDA01925B5D500020C8F /* AFUVApiClient.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09581FB191617C0009E2742 /* AppDelegate.m in Sources */,
+				F0F9EDA11925B5D500020C8F /* AFUVApiClient.m in Sources */,
 				F027BC8E1920CA5500254FD4 /* PlusViewController.m in Sources */,
 				F027BC941921B0BC00254FD4 /* PlusButton.m in Sources */,
 				F09582EB1918B843009E2742 /* MainViewController.m in Sources */,
