@@ -121,7 +121,7 @@
             }
         }
     }];
-
+    DLog(@"------task resume------");
     [task resume];
 
     return task;

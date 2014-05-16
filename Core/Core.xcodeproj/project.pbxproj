@@ -149,25 +149,12 @@
 		F0F9ED601925ABF600020C8F /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				F0F9ED611925ABF600020C8F /* AFHTTPRequestOperation.h */,
-				F0F9ED621925ABF600020C8F /* AFHTTPRequestOperation.m */,
-				F0F9ED631925ABF600020C8F /* AFHTTPRequestOperationManager.h */,
-				F0F9ED641925ABF600020C8F /* AFHTTPRequestOperationManager.m */,
-				F0F9ED651925ABF600020C8F /* AFHTTPSessionManager.h */,
-				F0F9ED661925ABF600020C8F /* AFHTTPSessionManager.m */,
 				F0F9ED671925ABF600020C8F /* AFNetworking.h */,
-				F0F9ED681925ABF600020C8F /* AFNetworkReachabilityManager.h */,
-				F0F9ED691925ABF600020C8F /* AFNetworkReachabilityManager.m */,
-				F0F9ED6A1925ABF600020C8F /* AFSecurityPolicy.h */,
-				F0F9ED6B1925ABF600020C8F /* AFSecurityPolicy.m */,
-				F0F9ED6C1925ABF600020C8F /* AFURLConnectionOperation.h */,
-				F0F9ED6D1925ABF600020C8F /* AFURLConnectionOperation.m */,
-				F0F9ED6E1925ABF600020C8F /* AFURLRequestSerialization.h */,
-				F0F9ED6F1925ABF600020C8F /* AFURLRequestSerialization.m */,
-				F0F9ED701925ABF600020C8F /* AFURLResponseSerialization.h */,
-				F0F9ED711925ABF600020C8F /* AFURLResponseSerialization.m */,
-				F0F9ED721925ABF600020C8F /* AFURLSessionManager.h */,
-				F0F9ED731925ABF600020C8F /* AFURLSessionManager.m */,
+				F0F9EDA71926083B00020C8F /* NSURLConnection */,
+				F0F9EDA3192607B500020C8F /* NSURLSession */,
+				F0F9EDA4192607E500020C8F /* Security */,
+				F0F9EDA5192607F900020C8F /* Reachability */,
+				F0F9EDA61926081600020C8F /* Serialization */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
@@ -194,6 +181,59 @@
 				F0F9ED851925ABF600020C8F /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		F0F9EDA3192607B500020C8F /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED721925ABF600020C8F /* AFURLSessionManager.h */,
+				F0F9ED731925ABF600020C8F /* AFURLSessionManager.m */,
+				F0F9ED651925ABF600020C8F /* AFHTTPSessionManager.h */,
+				F0F9ED661925ABF600020C8F /* AFHTTPSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		F0F9EDA4192607E500020C8F /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED6A1925ABF600020C8F /* AFSecurityPolicy.h */,
+				F0F9ED6B1925ABF600020C8F /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		F0F9EDA5192607F900020C8F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED681925ABF600020C8F /* AFNetworkReachabilityManager.h */,
+				F0F9ED691925ABF600020C8F /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		F0F9EDA61926081600020C8F /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED6E1925ABF600020C8F /* AFURLRequestSerialization.h */,
+				F0F9ED6F1925ABF600020C8F /* AFURLRequestSerialization.m */,
+				F0F9ED701925ABF600020C8F /* AFURLResponseSerialization.h */,
+				F0F9ED711925ABF600020C8F /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		F0F9EDA71926083B00020C8F /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED6C1925ABF600020C8F /* AFURLConnectionOperation.h */,
+				F0F9ED6D1925ABF600020C8F /* AFURLConnectionOperation.m */,
+				F0F9ED611925ABF600020C8F /* AFHTTPRequestOperation.h */,
+				F0F9ED621925ABF600020C8F /* AFHTTPRequestOperation.m */,
+				F0F9ED631925ABF600020C8F /* AFHTTPRequestOperationManager.h */,
+				F0F9ED641925ABF600020C8F /* AFHTTPRequestOperationManager.m */,
+			);
+			name = NSURLConnection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 #import "../../../Core/AFNetworking/AFHTTPSessionManager.h"
 @interface AFUVApiClient : AFHTTPSessionManager
-
++ (instancetype)sharedClient;
 @end

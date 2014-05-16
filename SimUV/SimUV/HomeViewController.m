@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "Post.h"
 
 @interface HomeViewController ()
 @property(nonatomic, strong)UITableView* mainTable;
@@ -46,6 +47,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     DLog(@"---------------------");
+    [self reload:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,5 +66,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)reload:(__unused id)sender {
+    //self.navigationItem.rightBarButtonItem.enabled = NO;
+    
+    NSURLSessionTask *task = [Post globalTimelinePostsWithBlock:^(NSArray *posts, NSError *error) {
+        if (!error) {
+//            self.posts = posts;
+//            [self.tableView reloadData];
+        }
+    }];
+    
+//    [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
+//    [self.refreshControl setRefreshingWithStateOfTask:task];
+}
 
 @end

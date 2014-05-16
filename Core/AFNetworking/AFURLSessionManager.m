@@ -338,11 +338,12 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
 {
     NSParameterAssert(task);
     NSParameterAssert(delegate);
-
+    
     [self.lock lock];
     [task addObserver:self forKeyPath:NSStringFromSelector(@selector(state)) options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:AFTaskStateChangedContext];
     self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)] = delegate;
     [self.lock unlock];
+    DLog(@"set delegate-----ok");
 }
 
 - (void)addDelegateForDataTask:(NSURLSessionDataTask *)dataTask
@@ -665,6 +666,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
 {
     if (context == AFTaskStateChangedContext && [keyPath isEqualToString:@"state"]) {
         NSString *notificationName = nil;
+        DLog(@"[object state] = %d", [object state]);
         switch ([(NSURLSessionTask *)object state]) {
             case NSURLSessionTaskStateRunning:
                 notificationName = AFNetworkingTaskDidResumeNotification;
@@ -675,6 +677,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
             case NSURLSessionTaskStateCompleted:
                 // AFNetworkingTaskDidFinishNotification posted by task completion handlers
             default:
+                //DLog(@"[object state] = %d", [object state]);
                 break;
         }
 
