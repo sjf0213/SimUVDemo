@@ -32,6 +32,8 @@
 		F09583381918D291009E2742 /* uv_tab_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F09583241918D291009E2742 /* uv_tab_profile@2x.png */; };
 		F09583581918D5A6009E2742 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09583571918D5A6009E2742 /* Images.xcassets */; };
 		F0EFA1021918DED800E96E96 /* TabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EFA1011918DED800E96E96 /* TabbarButton.m */; };
+		F0F9ED9B1925AF6D00020C8F /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F9ED9A1925AF6D00020C8F /* Post.m */; };
+		F0F9ED9E1925AFC800020C8F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F9ED9D1925AFC800020C8F /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +43,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = F0F9ED2D1925A97200020C8F;
 			remoteInfo = Core;
-		};
-		F0F9ED5D1925A99100020C8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0F9ED561925A99100020C8F /* Core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F0F9ED3D1925A97200020C8F;
-			remoteInfo = CoreTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -89,6 +84,10 @@
 		F0EFA1001918DED800E96E96 /* TabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarButton.h; sourceTree = "<group>"; };
 		F0EFA1011918DED800E96E96 /* TabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarButton.m; sourceTree = "<group>"; };
 		F0F9ED561925A99100020C8F /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../Core/Core.xcodeproj; sourceTree = "<group>"; };
+		F0F9ED991925AF6D00020C8F /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Services/Post.h; sourceTree = "<group>"; };
+		F0F9ED9A1925AF6D00020C8F /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Services/Post.m; sourceTree = "<group>"; };
+		F0F9ED9C1925AFC800020C8F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Services/User.h; sourceTree = "<group>"; };
+		F0F9ED9D1925AFC800020C8F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Services/User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +168,7 @@
 		F09581F0191617C0009E2742 /* SimUV */ = {
 			isa = PBXGroup;
 			children = (
+				F0F9ED971925AF0B00020C8F /* Services */,
 				F027BC48191CA72200254FD4 /* Tab */,
 				F0F9ED051925A74500020C8F /* Plus */,
 				F09581F9191617C0009E2742 /* AppDelegate.h */,
@@ -234,9 +234,27 @@
 			isa = PBXGroup;
 			children = (
 				F0F9ED5C1925A99100020C8F /* libCore.a */,
-				F0F9ED5E1925A99100020C8F /* CoreTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F0F9ED971925AF0B00020C8F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED981925AF1600020C8F /* Modals */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F0F9ED981925AF1600020C8F /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED991925AF6D00020C8F /* Post.h */,
+				F0F9ED9A1925AF6D00020C8F /* Post.m */,
+				F0F9ED9C1925AFC800020C8F /* User.h */,
+				F0F9ED9D1925AFC800020C8F /* User.m */,
+			);
+			name = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,13 +317,6 @@
 			remoteRef = F0F9ED5B1925A99100020C8F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F0F9ED5E1925A99100020C8F /* CoreTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CoreTests.xctest;
-			remoteRef = F0F9ED5D1925A99100020C8F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -341,6 +352,8 @@
 				F027BC941921B0BC00254FD4 /* PlusButton.m in Sources */,
 				F09582EB1918B843009E2742 /* MainViewController.m in Sources */,
 				F095830C1918BCDF009E2742 /* TabbarView.m in Sources */,
+				F0F9ED9B1925AF6D00020C8F /* Post.m in Sources */,
+				F0F9ED9E1925AFC800020C8F /* User.m in Sources */,
 				F027BC911920CF2000254FD4 /* PlusView.m in Sources */,
 				F09581F7191617C0009E2742 /* main.m in Sources */,
 				F0EFA1021918DED800E96E96 /* TabbarButton.m in Sources */,
