@@ -34,6 +34,23 @@
 		F0EFA1021918DED800E96E96 /* TabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EFA1011918DED800E96E96 /* TabbarButton.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F0F9ED5B1925A99100020C8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0F9ED561925A99100020C8F /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0F9ED2D1925A97200020C8F;
+			remoteInfo = Core;
+		};
+		F0F9ED5D1925A99100020C8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0F9ED561925A99100020C8F /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0F9ED3D1925A97200020C8F;
+			remoteInfo = CoreTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F027BC45191CA71600254FD4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F027BC46191CA71600254FD4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -71,6 +88,7 @@
 		F09583571918D5A6009E2742 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F0EFA1001918DED800E96E96 /* TabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarButton.h; sourceTree = "<group>"; };
 		F0EFA1011918DED800E96E96 /* TabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarButton.m; sourceTree = "<group>"; };
+		F0F9ED561925A99100020C8F /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../Core/Core.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +139,7 @@
 		F09581DE191617C0009E2742 = {
 			isa = PBXGroup;
 			children = (
+				F0F9ED561925A99100020C8F /* Core.xcodeproj */,
 				F09581F0191617C0009E2742 /* SimUV */,
 				F09581F1191617C0009E2742 /* Supporting Files */,
 				F095830D1918D291009E2742 /* resources */,
@@ -211,6 +230,15 @@
 			name = Plus;
 			sourceTree = "<group>";
 		};
+		F0F9ED571925A99100020C8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9ED5C1925A99100020C8F /* libCore.a */,
+				F0F9ED5E1925A99100020C8F /* CoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,12 +278,35 @@
 			mainGroup = F09581DE191617C0009E2742;
 			productRefGroup = F09581E8191617C0009E2742 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F0F9ED571925A99100020C8F /* Products */;
+					ProjectRef = F0F9ED561925A99100020C8F /* Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F09581E6191617C0009E2742 /* SimUV */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F0F9ED5C1925A99100020C8F /* libCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCore.a;
+			remoteRef = F0F9ED5B1925A99100020C8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F0F9ED5E1925A99100020C8F /* CoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoreTests.xctest;
+			remoteRef = F0F9ED5D1925A99100020C8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F09581E5191617C0009E2742 /* Resources */ = {
