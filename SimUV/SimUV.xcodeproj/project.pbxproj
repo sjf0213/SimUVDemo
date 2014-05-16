@@ -150,19 +150,14 @@
 		F09581F0191617C0009E2742 /* SimUV */ = {
 			isa = PBXGroup;
 			children = (
+				F027BC48191CA72200254FD4 /* Tab */,
+				F0F9ED051925A74500020C8F /* Plus */,
 				F09581F9191617C0009E2742 /* AppDelegate.h */,
 				F09581FA191617C0009E2742 /* AppDelegate.m */,
-				F027BC48191CA72200254FD4 /* Tab */,
 				F09582E91918B843009E2742 /* MainViewController.h */,
 				F09582EA1918B843009E2742 /* MainViewController.m */,
 				F027BC45191CA71600254FD4 /* HomeViewController.h */,
 				F027BC46191CA71600254FD4 /* HomeViewController.m */,
-				F027BC8C1920CA5500254FD4 /* PlusViewController.h */,
-				F027BC8D1920CA5500254FD4 /* PlusViewController.m */,
-				F027BC8F1920CF2000254FD4 /* PlusView.h */,
-				F027BC901920CF2000254FD4 /* PlusView.m */,
-				F027BC921921B0BC00254FD4 /* PlusButton.h */,
-				F027BC931921B0BC00254FD4 /* PlusButton.m */,
 			);
 			path = SimUV;
 			sourceTree = "<group>";
@@ -201,6 +196,19 @@
 				F09583241918D291009E2742 /* uv_tab_profile@2x.png */,
 			);
 			path = tabbar;
+			sourceTree = "<group>";
+		};
+		F0F9ED051925A74500020C8F /* Plus */ = {
+			isa = PBXGroup;
+			children = (
+				F027BC8C1920CA5500254FD4 /* PlusViewController.h */,
+				F027BC8D1920CA5500254FD4 /* PlusViewController.m */,
+				F027BC8F1920CF2000254FD4 /* PlusView.h */,
+				F027BC901920CF2000254FD4 /* PlusView.m */,
+				F027BC921921B0BC00254FD4 /* PlusButton.h */,
+				F027BC931921B0BC00254FD4 /* PlusButton.m */,
+			);
+			name = Plus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
