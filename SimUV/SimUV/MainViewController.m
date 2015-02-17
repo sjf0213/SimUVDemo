@@ -78,6 +78,20 @@
             [self showPlusView];
         }
         break;
+        case 3:
+        {
+            dispatch_queue_t myQueue = dispatch_queue_create("jiangyan", DISPATCH_QUEUE_SERIAL);
+            dispatch_queue_t myQueue1 = dispatch_queue_create("jiangyan", DISPATCH_QUEUE_CONCURRENT);
+            dispatch_sync(myQueue1, ^{
+                for(int i=0;i<100;i++){
+                    dispatch_async(myQueue, ^{
+                        sleep(1);
+                        NSLog(@"firstRun%d",i);
+                    });
+                }
+            });
+        }
+        break;
     }
 }
 

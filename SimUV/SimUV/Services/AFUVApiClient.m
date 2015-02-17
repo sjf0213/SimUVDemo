@@ -8,7 +8,7 @@
 
 #import "AFUVApiClient.h"
 
-static NSString * const AFUVApiBaseURLString = @"https://api.ultravisual.com//";
+static NSString * const AFUVApiBaseURLString = @"https://api.ultravisual.com";
 
 @implementation AFUVApiClient
 
